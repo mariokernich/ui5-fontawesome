@@ -7,6 +7,7 @@ framework:
   version: 1.134.0
   libraries:
     - name: sap.ui.core
+    - name: sap.m
     - name: themelib_sap_horizon
     - name: themelib_sap_fiori_3
 builder:

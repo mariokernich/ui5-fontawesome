@@ -5,17 +5,17 @@
 	"author": "Mario Kernich",
 	"license": "Apache-2.0",
 	"types": "dist/index.d.ts",
-  "files": [
-    ".eslintrc.js",
-    "LICENCE",
-    "README.md",
-    "tsconfig.json",
-    "ui5.yaml",
-    "dist/**/*.d.ts",
-    "dist/**/*.d.ts.map",
-    "src",
-    "test"
-  ],
+	"files": [
+		".eslintrc.js",
+		"LICENCE",
+		"README.md",
+		"tsconfig.json",
+		"ui5.yaml",
+		"dist/**/*.d.ts",
+		"dist/**/*.d.ts.map",
+		"src",
+		"test"
+	],
 	"scripts": {
 		"clean": "rimraf dist coverage",
 		"build": "ui5 build --clean-dest",
@@ -31,11 +31,11 @@
 		"test": "npm run lint && npm run karma-ci-cov"
 	},
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^6.7.2",
 		"@openui5/types": "1.134.0",
 		"@ui5/cli": "^4.0.6",
 		"@ui5/ts-interface-generator": "^0.8.3",
 		"eslint": "^9.9.1",
-		"typescript-eslint": "^8.3.0",
 		"globals": "^15.9.0",
 		"karma": "^6.4.4",
 		"karma-chrome-launcher": "^3.2.0",
@@ -44,6 +44,7 @@
 		"karma-ui5-transpile": "^3.4.8",
 		"rimraf": "^6.0.1",
 		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.3.0",
 		"ui5-middleware-livereload": "^3.0.3",
 		"ui5-tooling-transpile": "^3.4.8"
 	}
