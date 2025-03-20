@@ -1,6 +1,6 @@
 {
   "name": "fontawesome.icons.lib",
-  "version": "1.0.0",
+  "version": "6.7.2",
   "description": "UI5 Library: fontawesome.icons.lib",
   "author": "Mario Kernich",
   "license": "Apache-2.0",
@@ -21,7 +21,7 @@
     "build": "npm run build:icons && ui5 build --clean-dest",
     "build:ts-interfaces": "npx @ui5/ts-interface-generator",
     "build:icons": "node generate.js",
-    "start": "npm run build:icons && ui5 serve -o test-resources/fontawesome/icons/lib/Example.html",
+    "start": "npm run build:icons && ui5 serve -o test-resources/fontawesome/icons/lib/IconListPreview.html",
     "start:dist": "npm run build:icons && npm start -- --config ui5-dist.yaml",
     "testsuite": "ui5 serve -o test-resources/fontawesome/icons/lib/qunit/testsuite.qunit.html",
     "ts-typecheck": "tsc --noEmit",

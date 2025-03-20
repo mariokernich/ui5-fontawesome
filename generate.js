@@ -9,8 +9,6 @@ const copy = (src, dest) => {
     fs.copyFile(path.resolve(__dirname, faRoot + src), path.resolve(__dirname, targetRoot + dest), (err) => {
         if (err) {
             console.log(err);
-        } else {
-            console.log('Copy success');
         }
     });
 }
@@ -35,8 +33,6 @@ for (const key in families) {
 fs.writeFile(path.resolve(__dirname, targetRoot + '/fa-solid/fa-solid.json'), JSON.stringify(solidIcons), (err) => {
     if (err) {
         console.log(err);
-    } else {
-        console.log('Write success');
     }
 });
 
@@ -58,9 +54,7 @@ for (const key in families) {
 fs.writeFile(path.resolve(__dirname, targetRoot + '/fa-regular/fa-regular.json'), JSON.stringify(regularIcons), (err) => {
     if (err) {
         console.log(err);
-    } else {
-        console.log('Write success');
-    }
+    } 
 });
 
 copy('/webfonts/fa-brands-400.ttf', '/fa-brands/fa-brands.ttf');
@@ -81,7 +75,5 @@ for (const key in families) {
 fs.writeFile(path.resolve(__dirname, targetRoot + '/fa-brands/fa-brands.json'), JSON.stringify(brandIcons), (err) => {
     if (err) {
         console.log(err);
-    } else {
-        console.log('Write success');
     }
 });

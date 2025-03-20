@@ -21,7 +21,7 @@ const thisLib: { [key: string]: unknown } = Lib.init({
 		"sap.ui.core",
 		"sap.m",
 	],
-	types: ["fontawesome.icons.lib.ExampleColor"],
+	types: [],
 	interfaces: [],
 	controls: ["fontawesome.icons.lib.Example"],
 	elements: [],
@@ -48,28 +48,6 @@ IconPool.registerFont({
 	fontURI: sap.ui.require.toUrl("fontawesome/icons/lib/fonts/fa-regular"),
 	lazy: false,
 });
-
-/**
- * Semantic Colors of the com.myorg.myUI5Library.Example control.
- *
- * @enum {string}
- * @public
- */
-export enum ExampleColor {
-	/**
-	 * Default color (brand color)
-	 * @public
-	 */
-	Default = "Default",
-
-	/**
-	 * Highlight color
-	 * @public
-	 */
-	Highlight = "Highlight",
-}
-// FIXME: this line is planned to become obsolete and may need to be removed later
-thisLib.ExampleColor = ExampleColor; // add the enum to the library; this is important because UI5 otherwise cannot identify the type and will skip type checking for properties of this type
 
 // export the library namespace
 export default thisLib;
